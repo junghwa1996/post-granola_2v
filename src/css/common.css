@@ -218,7 +218,7 @@ header.fixed nav {
 
 main {
 	width: 100%;
-	background: #f2f9fe;
+	background: #f7e7d9;
 }
 
 main section {
@@ -228,20 +228,7 @@ main section {
 main section .title-main {
 	width: 100%;
 	position: relative;
-	margin-bottom: 10rem;
-}
-
-main section .title-main::after {
-	content: "";
-	display: block;
-	background: #7dbae9;
-	width: 2.3rem;
-	height: 2.3rem;
-	position: absolute;
-	left: 50%;
-	bottom: -0.8rem;
-	margin-left: -0.8rem;
-	transform: rotate(45deg);
+	margin-bottom: 4.0rem;
 }
 
 main section .title-sub {
@@ -355,36 +342,38 @@ main section .title-sub {
 }
 
 .kv {
-	height: 112.5rem;
+	height: 91.0rem;
 	background: url(../img/kv-background.png) no-repeat center top/cover;
 	position: relative;
-	padding-top: 6.1rem;
+	padding-top: 4.5rem;
 }
 
 .kv h2 {
-	width: 62.6rem;
-	height: 32.7rem;
+	width: 51.5rem;
+	height: 36.9rem;
 	margin: 0 auto;
 	background: url(../img/kv-title.png) no-repeat center center/contain;
 }
 
 .kv p {
-	width: 40.1rem;
-	height: 29.3rem;
+	width: 57.2rem;
+	height: 18.3rem;
 	background: url(../img/kv-image.png) no-repeat center center/contain;
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	margin-bottom: 3rem;
+	margin-right: -3.2rem;
 	z-index: 5;
 }
 
 .event1 .title-main {
-	height: 16.7rem;
-	background: url(../img/event1-title.png) no-repeat no-repeat center 1.4rem/55.8rem 10.3rem, #7dbae9;
+	height: 35.0rem;
+	background: url(../img/event1-title.png) no-repeat no-repeat center 6.0rem/38.4rem 28.2rem;
 }
 
 .event1 .title-sub {
-	height: 7.5rem;
+	height: 5.5rem;
 	background: url(../img/event1-text1.png) no-repeat center center/contain;
 	margin-bottom: 5rem;
 }
