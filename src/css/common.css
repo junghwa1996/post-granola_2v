@@ -141,10 +141,6 @@ header nav {
 header nav ul {
 	width: 100%;
 	height: 100%;
-	border: 0.1rem solid #0f3875;
-	border-top: 0.2rem solid #0f3875;
-	border-bottom: 1rem solid #0f3875;
-	background: #0f3875;
 	display: flex;
 	justify-content: center;
 }
@@ -152,13 +148,16 @@ header nav ul {
 header nav ul li {
 	width: 18rem;
 	height: 100%;
-	border-left: 0.1rem solid #0f3875;
-	border-right: 0.1rem solid #0f3875;
-	background: #2b54a5;
+	background: #9f7d5f;
 }
 
-header nav ul li:hover {
-	box-shadow: inset 0 0 0 18rem rgba(0, 0, 0, 0.1);
+header nav ul li:not(:last-child){
+	border-right: 0.1rem solid #bfa98d;
+}
+
+header nav ul li:hover,
+header nav ul li.active {
+	box-shadow: inset 0 0 0 18rem #ce412d;
 }
 
 header nav ul li a {
@@ -167,36 +166,42 @@ header nav ul li a {
 	height: 100%;
 }
 
+header nav ul .nav-event1.active a,
+header nav ul .nav-event2.active a,
+header nav ul .nav-event3.active a{
+	background-position: 50% 40%;
+}
+
 header nav .nav-event1 a {
-	background: url(../img/nav1-off.png) no-repeat center center/11.2rem 2.3rem;
+	background: url(../img/nav1-off.png) no-repeat center center/10.8rem 2.4rem;
 }
 
 header nav .nav-event2 a {
-	background: url(../img/nav2-off.png) no-repeat center center/11.9rem 2.3rem;
+	background: url(../img/nav2-off.png) no-repeat center center/11.4rem 2.3rem;
 }
 
 header nav .nav-event3 a {
-	background: url(../img/nav3-off.png) no-repeat center center/11.9rem 2.3rem;
+	background: url(../img/nav3-off.png) no-repeat center center/11.4rem 2.3rem;
 }
 
 header nav .nav-buy a {
-	background: url(../img/nav4-off.png) no-repeat center center/8.5rem 2.5rem;
+	background: url(../img/nav4-off.png) no-repeat center center/10.0rem 2.6rem;
 }
 
 header nav .nav-event1.active a {
-	background: url(../img/nav1-on.png) no-repeat center center/11.2rem 2.3rem;
+	background: url(../img/nav1-on.png) no-repeat center center/10.8rem 4.0rem;
 }
 
 header nav .nav-event2.active a {
-	background: url(../img/nav2-on.png) no-repeat center center/11.9rem 2.3rem;
+	background: url(../img/nav2-on.png) no-repeat center center/11.4rem 4.0rem;
 }
 
 header nav .nav-event3.active a {
-	background: url(../img/nav3-on.png) no-repeat center center/11.9rem 2.3rem;
+	background: url(../img/nav3-on.png) no-repeat center center/11.4rem 4.0rem;
 }
 
 header nav .nav-buy:active a {
-	background: url(../img/nav4-on.png) no-repeat center center/8.5rem 2.5rem;
+	/* background: url(../img/nav4-on.png) no-repeat center center/8.5rem 2.5rem; */
 }
 
 header.fixed h1 {
