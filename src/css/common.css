@@ -223,6 +223,15 @@ main {
 
 main section {
 	width: 100%;
+	position: relative;
+}
+
+main section:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 0;	top: 0;
+	margin-top: 5rem;
 }
 
 main section .title-main {
@@ -237,10 +246,9 @@ main section .title-sub {
 
 .button-type1 {
 	display: block;
-	width: 42rem;
-	height: 9rem;
-	background: url(../img/button-background1.png) no-repeat center center/42rem 9rem;
-	border-radius: 0.5rem 1.2rem;
+	width: 27.4rem;
+	height: 8.5rem;
+	background: url(../img/button-background1.png) no-repeat center center/27.4rem 8.5rem;
 }
 
 .button-type1:hover {
@@ -332,11 +340,23 @@ main section .title-sub {
 
 .section-prize {
 	width: 100%;
+	position: relative;
+	padding-top: 8.0rem;
+}
+
+.section-prize:after {
+	content: '';
+	width: 58.6rem;
+	height: 3.5rem;
+	background: url(../img/line.png) no-repeat top center/contain;
+	position: absolute;
+	left: 50%; top: 0;
+	transform: translateX(-50%);
 }
 
 .section-prize h4 {
-	width: 39rem;
-	height: 6.3rem;
+	width: 15.9rem;
+	height: 3.4rem;
 	background: url(../img/prize-title.png) no-repeat center center/contain;
 	margin: 0 auto;
 }
@@ -367,6 +387,17 @@ main section .title-sub {
 	z-index: 5;
 }
 
+.event1{
+	height: 219.0rem;
+	background: url(../img/event1-background.png) no-repeat no-repeat center 10.0rem/66.6rem 209.0rem;;
+}
+
+.event1:after{
+	width: 12.1rem;
+	height: 12.3rem;
+	background: url(../img/event1-decoration.png) no-repeat center center/contain;
+}
+
 .event1 .title-main {
 	height: 35.0rem;
 	background: url(../img/event1-title.png) no-repeat no-repeat center 6.0rem/38.4rem 28.2rem;
@@ -380,8 +411,8 @@ main section .title-sub {
 
 .event1 .video-embed {
 	position: relative;
-	width: 66rem;
-	height: 37.125rem;
+	width: 57.6rem;
+	height: 32.4rem;
 	margin: 0 auto 6rem;
 }
 
@@ -423,16 +454,31 @@ main section .title-sub {
 .event1 .button-event1::after {
 	content: "";
 	display: inline-block;
-	width: 18rem;
-	height: 3.5rem;
+	width: 18.4rem;
+	height: 3.2rem;
 	background: url(../img/event1-button1.png) no-repeat center center/contain;
 }
 
 .event1 .section-prize > div {
-	width: 53rem;
-	height: 42.4rem;
-	background: url(../img/event1-prize.png) no-repeat center center/contain;
-	margin: 2rem auto 10rem;
+	margin: 5rem auto 7rem;
+}
+
+.event1 .section-prize .prize1{
+	width: 33.6rem;
+	height: 20.5rem;
+	background: url(../img/event1-prize1.png) no-repeat center center/contain;
+}
+
+.event1 .section-prize .prize2{
+	width: 34.0rem;
+	height: 26.1rem;
+	background: url(../img/event1-prize2.png) no-repeat center center/contain;
+}
+
+.event1 .section-prize .prize3{
+	width: 24.7rem;
+	height: 26.0rem;
+	background: url(../img/event1-prize3.png) no-repeat center center/contain;
 }
 
 .event2 .title-main {
