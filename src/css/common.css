@@ -480,12 +480,12 @@ main section .title-sub {
 }
 
 .event2 .title-main {
-	height: 24.3rem;
-	background: url(../img/event2-title.png) no-repeat center center/45.7rem 15.4rem, #7dbae9;
+	height: 35.0rem;
+	background: url(../img/event2-title.png) no-repeat no-repeat center 6.0rem/37.4rem 28.2rem;
 }
 
 .event2 .title-sub {
-	height: 15.9rem;
+	height: 5.5rem;
 	background: url(../img/event2-text1.png) no-repeat center center/contain;
 	margin-bottom: 4rem;
 }
