@@ -245,14 +245,22 @@ $('.form-read-button').click(function() {
 	}
 });
 
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.winner-list', {
 	loop: true,
 	autoHeight: true,
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
-})
+});
+
+var mySwiper = new Swiper('.gallery-list-container', {
+	loop: true,
+	autoHeight: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
 
 $('.button-result1').click(function() {
 	modalOpen('.modal-result1');
