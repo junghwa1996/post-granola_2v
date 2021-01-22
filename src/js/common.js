@@ -165,12 +165,12 @@ $('.modal-event1-page2 .modal-submit').click(function() {
 	modalCheck('.modal-event1', 'page2', 'end');
 });
 
-$('input[name="eventSelect"]').change(function() {
-	$('.event2-select li').removeClass('active');
-	if ($(this).is(':checked') === true) {
-		$(this).parent('li').addClass('active');
-	}
-})
+// $('input[name="eventSelect"]').change(function() {
+// 	$('.event2-select li').removeClass('active');
+// 	if ($(this).is(':checked') === true) {
+// 		$(this).parent('li').addClass('active');
+// 	}
+// })
 
 $('.button-event2').click(function() {
 		modalOpen('.modal-event2');
@@ -181,10 +181,7 @@ $('.modal-event2-page1 .event2-select ul li').click(function() {
 });
 
 $('.modal-event2-page2 .modal-submit').click(function() {
-	modalCheck('.modal-event2', 'page2', 'loading');
-	if (!document.querySelector('.modal-event2-loading').classList.contains('hidden')) {
-		window.setTimeout(function() { modalNext('.modal-event2', 'loading', 'page3-1') }, 3000);
-	}
+	modalCheck('.modal-event2', 'page2', 'end');
 });
 
 $('.modal-event2-page3 .modal-submit').click(function() {

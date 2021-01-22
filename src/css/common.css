@@ -1369,23 +1369,31 @@ footer p:last-child {
 	top: 0;
 }
 
-.modal-event2-page1 .event2-select ul li.event2-select1.active::after {
+.modal-event2-page1 .event2-select ul li:hover::after{
+	cursor: pointer;
+}
+
+.modal-event2-page1 .event2-select ul li.event2-select1.active::after,
+.modal-event2-page1 .event2-select ul li.event2-select1:hover::after {
 	width: 26.3rem;
 	height: 29.7rem;
 	background: url(../img/event2-radio1-check.png) no-repeat center top/26.3rem 29.7rem;
 }
 
-.modal-event2-page1 .event2-select ul li.event2-select2.active::after {
+.modal-event2-page1 .event2-select ul li.event2-select2.active::after,
+.modal-event2-page1 .event2-select ul li.event2-select2:hover::after {
 	width: 24.2rem;
 	height: 30.1rem;
 	background: url(../img/event2-radio2-check.png) no-repeat center top/24.2rem 30.1rem;
 }
-.modal-event2-page1 .event2-select ul li.event2-select3.active::after {
+.modal-event2-page1 .event2-select ul li.event2-select3.active::after,
+.modal-event2-page1 .event2-select ul li.event2-select3:hover::after {
 	width: 26rem;
 	height: 29.5rem;
 	background: url(../img/event2-radio3-check.png) no-repeat center top/26rem 29.5rem;
 }
-.modal-event2-page1 .event2-select ul li.event2-select4.active::after {
+.modal-event2-page1 .event2-select ul li.event2-select4.active::after,
+.modal-event2-page1 .event2-select ul li.event2-select4:hover::after {
 	width: 25.4rem;
 	height: 29.6rem;
 	background: url(../img/event2-radio4-check.png) no-repeat center top/25.4rem 29.6rem;
