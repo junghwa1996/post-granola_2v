@@ -98,7 +98,7 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 	overflow: hidden;
 	overflow-y: auto;
-	/* padding-left: calc(100vw - 100%); */
+	padding-left: calc(100vw - 100%);
 }
 
 body.modal-active {
@@ -507,80 +507,6 @@ main section .title-sub {
 	height: 41.9rem;
 	background: url(../img/event2-kit.png) no-repeat center center/contain;
 	margin-bottom: 4.5rem;
-}
-
-.event2 .event2-select {
-	width: 66rem;
-	height: 98.4rem;
-	background: url(../img/event2-image1.png) no-repeat center top/contain;
-	margin: 0 auto 7.6rem;
-	padding-top: 21rem;
-	padding: 21rem 2.5rem 0;
-}
-
-.event2 .event2-select ul {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.event2 .event2-select ul li {
-	width: 19.5rem;
-	height: 25rem;
-	margin-bottom: 5rem;
-	position: relative;
-}
-
-.event2 .event2-select ul li::after {
-	content: "";
-	display: block;
-	width: 0;
-	height: 3.4rem;
-	position: absolute;
-	top: 0;
-	left: 13.8rem;
-	background: url(../img/event2-radio-check.png) no-repeat left center/4.2rem 3.4rem;
-}
-
-.event2 .event2-select ul li.active::after {
-	width: 4.2rem;
-	transition: width 0.3s ease-in;
-}
-
-.event2 .event2-select ul li label {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-}
-
-.event2 .event2-select ul li input {
-	visibility: hidden;
-}
-
-.event2 .event2-select1 {
-	background: url(../img/event2-radio1.png) no-repeat center top/17rem 23.8rem;
-}
-
-.event2 .event2-select2 {
-	background: url(../img/event2-radio2.png) no-repeat center top/17rem 21.2rem;
-}
-
-.event2 .event2-select3 {
-	background: url(../img/event2-radio3.png) no-repeat center top/17rem 21.2rem;
-}
-
-.event2 .event2-select4 {
-	background: url(../img/event2-radio4.png) no-repeat center top/17rem 21.2rem;
-}
-
-.event2 .event2-select5 {
-	background: url(../img/event2-radio5.png) no-repeat center top/17rem 21.2rem;
-}
-
-.event2 .event2-select6 {
-	background: url(../img/event2-radio6.png) no-repeat center top/19.5rem 23.8rem;
 }
 
 .event2 .button-event2 {
@@ -992,7 +918,7 @@ main section .title-sub {
 	position: relative;
 	padding-left: 1.3rem;
 	word-break: keep-all;
-	letter-spacing: -0.12rem;
+	letter-spacing: -0.18rem;
 }
 
 .notice ul li::before {
@@ -1169,6 +1095,21 @@ footer p:last-child {
 .modal-content .form-field .form-address-find:focus {
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 	transition: outline 0.2s ease-in;
+}
+
+.modal-content .form-insta {
+	padding: 0;
+	height: 13rem;
+}
+
+.modal-content .form-insta label {
+	display: block;
+	position: static;
+	margin-bottom: 2rem;
+}
+
+.modal-content .form-insta input {
+	height: 7rem;
 }
 
 .modal-content .form-address {
@@ -1366,22 +1307,123 @@ footer p:last-child {
 
 .modal-event2 {
 	top: 8.8rem;
-	margin-top: 18.4rem;
+	margin-top: 8.8rem;
 	margin-bottom: 8.8rem;
 }
 
 .modal-event2 h3 {
-	width: 60rem;
-	height: 16.7rem;
+	width: 10.9rem;
+	height: 13.0rem;
 	background: url(../img/modal-title2.png) no-repeat center center/contain;
 	position: absolute;
-	top: -11rem;
+	top: -5.8rem;
 	left: 50%;
-	margin-left: -30rem;
+	transform: translateX(-50%);
 }
 
 .modal-event2-page1 {
-	text-align: center;
+	height: 146.8rem;
+	background: url(../img/modal-event2-bg.png) no-repeat center center/contain;
+}
+
+.modal-event2-page1 .modal-title{
+	height: 11rem;
+	background: url(../img/modal-event2-title.png) no-repeat center center/contain;
+}
+
+.modal-event2-page1 .modal-title-sub{
+	height: 5.5rem;
+	background: url(../img/modal-event2-page1-title-sub.png) no-repeat center center/contain;
+}
+
+.modal-event2-page1 .modal-content{
+	margin: 5rem auto 3rem;
+}
+
+.modal-event2-page1 .event-kit{
+	height: 34.5rem;
+	background: url(../img/modal-event2-kit.png) no-repeat center center/contain;
+	margin-bottom: 4.5rem;
+}
+
+.modal-event2-page1 .event2-select {
+	padding: 0 4.5rem 0;
+}
+
+.modal-event2-page1 .event2-select ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.modal-event2-page1 .event2-select ul li {
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.modal-event2-page1 .event2-select ul li::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+}
+
+.modal-event2-page1 .event2-select ul li.event2-select1.active::after {
+	width: 26.3rem;
+	height: 29.7rem;
+	background: url(../img/event2-radio1-check.png) no-repeat center top/26.3rem 29.7rem;
+}
+
+.modal-event2-page1 .event2-select ul li.event2-select2.active::after {
+	width: 24.2rem;
+	height: 30.1rem;
+	background: url(../img/event2-radio2-check.png) no-repeat center top/24.2rem 30.1rem;
+}
+.modal-event2-page1 .event2-select ul li.event2-select3.active::after {
+	width: 26rem;
+	height: 29.5rem;
+	background: url(../img/event2-radio3-check.png) no-repeat center top/26rem 29.5rem;
+}
+.modal-event2-page1 .event2-select ul li.event2-select4.active::after {
+	width: 25.4rem;
+	height: 29.6rem;
+	background: url(../img/event2-radio4-check.png) no-repeat center top/25.4rem 29.6rem;
+}
+
+.modal-event2-page1 .event2-select ul li label {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.modal-event2-page1 .event2-select ul li input {
+	visibility: hidden;
+}
+
+.modal-event2-page1 .event2-select1 {
+	width: 26.3rem;
+	height: 29.7rem;
+	background: url(../img/event2-radio1.png) no-repeat center top/26.3rem 29.7rem;
+}
+
+.modal-event2-page1 .event2-select2 {
+	width: 24.2rem;
+	height: 30.1rem;
+	background: url(../img/event2-radio2.png) no-repeat center top/24.2rem 30.1rem;
+}
+
+.modal-event2-page1 .event2-select3 {
+	width: 26rem;
+	height: 29.5rem;
+	background: url(../img/event2-radio3.png) no-repeat center top/26.0rem 29.5rem;
+}
+
+.modal-event2-page1 .event2-select4 {
+	width: 25.4rem;
+	height: 29.6rem;
+	background: url(../img/event2-radio4.png) no-repeat center top/25.4rem 29.6rem;
 }
 
 .modal-event2-page1 textarea {
@@ -1413,17 +1455,27 @@ footer p:last-child {
 	background: url(../img/modal-button2.png) no-repeat center center/contain;
 }
 
+.modal-event2-page2{
+	height: 155rem;
+	background: url(../img/modal-event3-page4-bg.png) no-repeat center center/contain;
+}
+
+.modal-event2-page2 .modal-title{
+	height: 12.2rem;
+	background: url(../img/modal-event3-page4-title.png) no-repeat center center/contain;
+}
+
 .modal-event2-page2 .modal-content {
-	width: 43rem;
+	width: 52rem;
 	margin: 5.5rem auto 6rem;
 }
 
 .modal-event2-page2 .modal-submit::after {
 	content: "";
 	display: inline-block;
-	width: 10.6rem;
-	height: 3rem;
-	background: url(../img/modal-button2.png) no-repeat center center/contain;
+	width: 5.8rem;
+	height: 3.2rem;
+	background: url(../img/modal-button1.png) no-repeat center center/contain;
 }
 
 .modal-event2-loading {
@@ -1489,10 +1541,6 @@ footer p:last-child {
 	width: 5.5rem;
 	height: 3rem;
 	background: url(../img/modal-button1.png) no-repeat center center/contain;
-}
-
-.modal-event2 .modal-close {
-	top: -18.4rem;
 }
 
 .modal-event3 {
@@ -1645,21 +1693,6 @@ footer p:last-child {
 .modal-event3-page4 .modal-content {
 	width: 52rem;
 	margin: 7.3rem auto 6rem;
-}
-
-.modal-event3-page4 .form-insta {
-	padding: 0;
-	height: 13rem;
-}
-
-.modal-event3-page4 .form-insta label {
-	display: block;
-	position: static;
-	margin-bottom: 2rem;
-}
-
-.modal-event3-page4 .form-insta input {
-	height: 7rem;
 }
 
 .modal-event3-page4 .form-label-sub {

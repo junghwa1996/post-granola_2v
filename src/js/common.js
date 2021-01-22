@@ -176,7 +176,7 @@ $('.button-event2').click(function() {
 		modalOpen('.modal-event2');
 });
 
-$('.modal-event2-page1 .modal-submit').click(function() {
+$('.modal-event2-page1 .event2-select ul li').click(function() {
 	modalNext('.modal-event2', 'page1', 'page2');
 });
 
