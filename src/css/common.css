@@ -231,6 +231,13 @@ main section:after{
 	display: inline-block;
 	position: absolute;
 	right: 0;	top: 0;
+}
+
+main section::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;	bottom: 0;
 	margin-top: 5rem;
 }
 
@@ -255,11 +262,6 @@ main section .title-sub {
 	box-shadow: inset 0 0 0 42rem rgba(0, 0, 0, 0.1);
 }
 
-.button-type1:active {
-	background: url(../img/button-background1.png) no-repeat no-repeat 0.3rem 0.3rem/42rem 9rem;
-	box-shadow: none;
-}
-
 .button-type1:active::after {
 	position: relative;
 	top: 0.3rem;
@@ -268,9 +270,9 @@ main section .title-sub {
 
 .button-type2 {
 	display: block;
-	width: 27.4rem;
+	width: 30.5rem;
 	height: 8.5rem;
-	background: url(../img/button-background1.png) no-repeat center center/27.4rem 8.5rem;
+	background: url(../img/button-background2.png) no-repeat center center/30.5rem 8.5rem;
 	margin: 0 auto;
 }
 
@@ -394,6 +396,16 @@ main section .title-sub {
 	width: 12.1rem;
 	height: 12.3rem;
 	background: url(../img/event1-decoration.png) no-repeat center center/contain;
+	margin-top: 6rem;
+}
+
+.event1::before{
+	width: 37.6rem;
+	height: 34.1rem;
+	background: url(../img/event1-decoration2.png) no-repeat center center/contain;
+	bottom: -18rem;
+	left: -15.7rem;
+	z-index: 1;
 }
 
 .event1 .title-main {
@@ -479,6 +491,18 @@ main section .title-sub {
 	background: url(../img/event1-prize3.png) no-repeat center center/contain;
 }
 
+.event2{
+	height: 190.5rem;
+	background: url(../img/event2-background.png) no-repeat no-repeat center 10.0rem/66.6rem 180.5rem;;
+}
+
+.event2:after {
+	width: 12.8rem;
+	height: 9.6rem;
+	background: url(../img/event2-decoration.png) no-repeat center center/contain;
+	margin-top: 7rem;
+}
+
 .event2 .title-main {
 	height: 35.0rem;
 	background: url(../img/event2-title.png) no-repeat no-repeat center 6.0rem/37.4rem 28.2rem;
@@ -488,6 +512,12 @@ main section .title-sub {
 	height: 5.5rem;
 	background: url(../img/event2-text1.png) no-repeat center center/contain;
 	margin-bottom: 4rem;
+}
+
+.event2 .event-kit{
+	height: 41.9rem;
+	background: url(../img/event2-kit.png) no-repeat center center/contain;
+	margin-bottom: 4.5rem;
 }
 
 .event2 .event2-select {
@@ -565,22 +595,35 @@ main section .title-sub {
 }
 
 .event2 .button-event2 {
-	margin: 0 auto;
+	margin: 0 auto 8rem;
 }
 
 .event2 .button-event2::after {
 	content: "";
 	display: inline-block;
-	width: 6.4rem;
-	height: 3.5rem;
+	width: 21.5rem;
+	height: 3.2rem;
 	background: url(../img/event2-button1.png) no-repeat center center/contain;
 }
 
-.event2 .section-prize > div {
-	width: 60.2rem;
-	height: 59.5rem;
-	background: url(../img/event2-prize.png) no-repeat center center/contain;
-	margin: 4rem auto 10rem;
+.event2 .section-prize h4{
+	width: 41.3rem;
+	height: 3.2rem;
+	background: url(../img/prize-title2.png) no-repeat center center/contain;
+}
+
+.event2 .section-prize .prize-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	width: 61rem;
+	margin: 0 auto;
+}
+
+.event2 .section-prize .prize-wrap > div {
+	width: 21.0rem;
+	height: 17.4rem;
+	background: url(../img/event2-prize1.png) no-repeat center center/contain;
+	margin: 7rem auto 0rem;
 }
 
 .playhouse .title-main {
@@ -646,49 +689,59 @@ main section .title-sub {
 	background: url(../img/playhouse-text4.png) no-repeat center center/contain;
 }
 
+.event3{
+	height: 337.7rem;
+	background: url(../img/event3-background.png) no-repeat no-repeat center 10.0rem/66.6rem 281.2rem;;
+}
+
+.event3:after {
+	width: 35.9rem;
+	height: 40.9rem;
+	background: url(../img/event3-decoration.png) no-repeat center center/contain;
+	top: -17rem;
+	right: -18rem;
+	z-index: 1;
+}
+
+.event3::before {
+	width: 12.6rem;
+	height: 9rem;
+	background: url(../img/event3-decoration2.png) no-repeat center center/contain;
+	bottom: 43rem;
+}
+
 .event3 .title-main {
-	height: 24.2rem;
-	background: url(../img/event3-title.png) no-repeat center center/43.8rem 15.4rem, #7dbae9;
+	height: 35.0rem;
+	background: url(../img/event3-title.png) no-repeat no-repeat center 6.0rem/24.2rem 28.2rem;
 }
 
 .event3 .title-sub {
-	height: 15.3rem;
+	height: 5.5rem;
 	background: url(../img/event3-text1.png) no-repeat center center/contain;
 	margin-bottom: 3.5rem;
-}
-
-.event3 .section1 h4 {
-	width: 28.3rem;
-	height: 9.2rem;
-	background: url(../img/event3-title2.png) no-repeat center center/contain;
-	margin: 0 auto 5rem;
 }
 
 .event3 .section1 ol {
 	width: 100%;
 	position: relative;
-	height: 27.1rem;
-	margin-bottom: 3.2rem;
+	height: 29.5rem;
+	margin-bottom: 4.5rem;
+}
+
+.event3 .section1 ol li{
+	margin: 1rem auto 0;
 }
 
 .event3 .section1 ol li:first-child {
-	width: 58rem;
-	height: 14.6rem;
+	width: 45.3rem;
+	height: 15.9rem;
 	background: url(../img/event3-text2.png) no-repeat center top/contain;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -29rem;
 }
 
 .event3 .section1 ol li:last-child {
-	width: 58rem;
-	height: 12.5rem;
+	width: 49.3rem;
+	height: 12.8rem;
 	background: url(../img/event3-text3.png) no-repeat center top/contain;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	margin-left: -29rem;
 }
 
 .event3 .section1 p {
@@ -699,21 +752,19 @@ main section .title-sub {
 }
 
 .event3 .section2 {
-	height: 45.3rem;
-	background: url(../img/event3-image1.png) no-repeat center bottom/58rem 34.8rem;
 	margin: 0 auto 8rem;
 }
 
 .event3 .section2 h4 {
-	width: 41rem;
-	height: 13.6rem;
+	width: 31.9rem;
+	height: 3.8rem;
 	background: url(../img/event3-title3.png) no-repeat center center/contain;
 	margin: 0 auto 4rem;
 }
 
 .event3 .section2 p {
-	width: 50.3rem;
-	height: 6.2rem;
+	width: 36.2rem;
+	height: 8.8rem;
 	background: url(../img/event3-text5.png) no-repeat center center/contain;
 	margin: 0 auto 5rem;
 }
@@ -725,21 +776,32 @@ main section .title-sub {
 .event3 .button-event3-1::after {
 	content: "";
 	display: inline-block;
-	width: 24.8rem;
-	height: 3.4rem;
+	width: 24.2rem;
+	height: 3.2rem;
 	background: url(../img/event3-button1.png) no-repeat center center/contain;
 }
 
-.event3 .gallery {
-	width: 66rem;
-	height: 89rem;
-	background: url(../img/event3-image2.png) no-repeat center bottom/66rem 84.7rem;
-	margin: 0 auto 8.6rem;
+.event3 .gallery{
+	width: 100%;
+	position: relative;
+	padding-top: 8.0rem;
+	margin-bottom: 7.8rem;
+}
+
+.event3 .gallery:after{
+	content: '';
+	width: 58.6rem;
+	height: 3.5rem;
+	background: url(../img/line.png) no-repeat top center/contain;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
 }
 
 .event3 .gallery h4 {
-	width: 32.8rem;
-	height: 7.8rem;
+	width: 31.3rem;
+	height: 3.1rem;
 	background: url(../img/event3-title4.png) no-repeat center center/contain;
 	margin: 0 auto 10.5rem;
 }
@@ -794,27 +856,58 @@ main section .title-sub {
 .event3 .button-event3-2::after {
 	content: "";
 	display: inline-block;
-	width: 12.2rem;
-	height: 3.4rem;
+	width: 24.5rem;
+	height: 3.2rem;
 	background: url(../img/event3-button2.png) no-repeat center center/contain;
 }
 
 .event3 .section-prize > div {
-	width: 59.5rem;
-	height: 52.2rem;
-	background: url(../img/event3-prize.png) no-repeat center center/contain;
 	margin: 4rem auto 7rem;
 }
 
+.event3 .section-prize .prize1{
+	width: 33.6rem;
+	height: 20.5rem;
+	background: url(../img/event1-prize1.png) no-repeat center center/contain;
+}
+
+.event3 .section-prize .prize2{
+	width: 34.0rem;
+	height: 26.1rem;
+	background: url(../img/event1-prize2.png) no-repeat center center/contain;
+}
+
 .event3 .section3 {
-	height: 31.9rem;
-	background: url(../img/event3-image3.png) no-repeat center bottom/58rem 28.9rem;
-	margin: 0 auto 6rem;
+	margin: 20rem auto 6rem;
+	width: 100%;
+	position: relative;
+	padding-top: 7.0rem;
+}
+
+.event3 .section3:after{
+	content: '';
+	width: 58.6rem;
+	height: 3.5rem;
+	background: url(../img/line.png) no-repeat top center/contain;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+.event3 .section3::before{
+	content: '';
+	position: absolute;
+	width: 40.4rem;
+	height: 35.5rem;
+	background: url(../img/event3-decoration3.png) no-repeat center center/contain;
+	right: -19rem;
+	bottom: -28rem;
 }
 
 .event3 .section3 h4 {
-	width: 39.7rem;
-	height: 6.5rem;
+	width: 21.8rem;
+	height: 3.2rem;
 	background: url(../img/event3-title5.png) no-repeat center center/contain;
 	margin: 0 auto 4rem;
 }
@@ -824,15 +917,15 @@ main section .title-sub {
 }
 
 .event3 .section3 ul li:first-child {
-	width: 42.1rem;
-	height: 2.1rem;
+	width: 45.2rem;
+	height: 4.0rem;
 	background: url(../img/event3-text6.png) no-repeat left top/contain;
 	margin-bottom: 2.5rem;
 }
 
 .event3 .section3 ul li:last-child {
-	width: 40rem;
-	height: 13rem;
+	width: 45.2rem;
+	height: 4.0rem;
 	background: url(../img/event3-text7.png) no-repeat left top/contain;
 }
 
@@ -851,21 +944,21 @@ main section .title-sub {
 
 .notice {
 	width: 100%;
-	background: #fafafa;
+	background: #443b36;
 	padding: 8rem 2.2rem 5rem 4rem;
 }
 
 .notice h3 {
-	width: 20.7rem;
-	height: 3rem;
+	width: 26.8rem;
+	height: 3.3rem;
 	background: url(../img/notice-title.png) no-repeat left top/contain;
 	margin-bottom: 5rem;
 }
 
 .notice ul li {
-	font-size: 2.2rem;
+	font-size: 2.8rem;
 	font-weight: 400;
-	color: #666;
+	color: #a9a39e;
 	margin-bottom: 3rem;
 	position: relative;
 	padding-left: 1.3rem;
@@ -887,28 +980,29 @@ main section .title-sub {
 
 footer {
 	width: 100%;
-	background: #403a36;
-	padding: 4rem 0 6.5rem 5.3rem;
+	background: #fff;
+	padding: 5rem 0 6.5rem;
+	text-align: center;
 }
 
 footer p:first-child {
-	width: 19.3rem;
-	height: 3.6rem;
-	background: url(../img//footer-logo.png) no-repeat left top/contain;
-	margin-bottom: 2.5rem;
+	width: 28rem;
+	height: 6.1rem;
+	background: url(../img//footer-logo.png) no-repeat center top/contain;
+	margin: 0 auto 2.5rem;
 }
 
 footer p:nth-child(2) {
 	font-size: 2.4rem;
 	font-weight: 400;
-	color: #fff;
-	margin-bottom: 3rem;
+	color: #000;
+	margin-bottom: 2rem;
 }
 
 footer p:last-child {
 	font-size: 2.4rem;
 	font-weight: 400;
-	color: #fff;
+	color: #a19b94;
 }
 
 #modal {

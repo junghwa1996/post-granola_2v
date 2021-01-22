@@ -128,7 +128,7 @@ function modalClose() {
 function hashtagCopy() {
     var dummy = document.createElement("textarea");
     document.querySelector('.hash-dummy').appendChild(dummy);
-    dummy.value = '#포스트콘푸라이트 #콘푸라이트 #우리가족식사 #아빠표플레이하우스 #콘푸라이트플레이하우스';
+    dummy.value = '#포스트그래놀라 #포스트현미그래놀라 #그래놀라홈브런치 #홈브런치맛집';
     dummy.select();
     document.execCommand("copy");
 	document.querySelector('.hash-dummy').removeChild(dummy);
@@ -173,14 +173,7 @@ $('input[name="eventSelect"]').change(function() {
 })
 
 $('.button-event2').click(function() {
-	if ($('input[name="eventSelect"]').is(':checked') === false) {
-		alert('보기를 선택해주세요!');
-	} else {
 		modalOpen('.modal-event2');
-		if ($('#eventSelect6').is(':checked') === false) {
-			modalNext('.modal-event2', 'page1', 'page2');
-		}
-	}
 });
 
 $('.modal-event2-page1 .modal-submit').click(function() {
