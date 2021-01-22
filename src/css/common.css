@@ -98,7 +98,7 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 	overflow: hidden;
 	overflow-y: auto;
-	padding-left: calc(100vw - 100%);
+	/* padding-left: calc(100vw - 100%); */
 }
 
 body.modal-active {
@@ -620,10 +620,31 @@ main section .title-sub {
 }
 
 .event2 .section-prize .prize-wrap > div {
+	margin: 7rem auto 0rem;
+}
+
+.event2 .section-prize .prize-wrap .prize1{
 	width: 21.0rem;
 	height: 17.4rem;
 	background: url(../img/event2-prize1.png) no-repeat center center/contain;
-	margin: 7rem auto 0rem;
+}
+
+.event2 .section-prize .prize-wrap .prize2{
+	width: 21.0rem;
+	height: 17.4rem;
+	background: url(../img/event2-prize2.png) no-repeat center center/contain;
+}
+
+.event2 .section-prize .prize-wrap .prize3{
+	width: 21.0rem;
+	height: 17.4rem;
+	background: url(../img/event2-prize3.png) no-repeat center center/contain;
+}
+
+.event2 .section-prize .prize-wrap .prize4{
+	width: 21.0rem;
+	height: 17.4rem;
+	background: url(../img/event2-prize4.png) no-repeat center center/contain;
 }
 
 .playhouse .title-main {
