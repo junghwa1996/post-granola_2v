@@ -252,10 +252,14 @@ var mySwiper = new Swiper('.winner-list', {
 });
 
 var mySwiper = new Swiper('.gallery-list-container', {
-	loop: true,
+	loop: false,
 	autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
+	},
+	navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 

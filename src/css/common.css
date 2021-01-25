@@ -665,7 +665,7 @@ main section .title-sub {
 }
 
 .event3 .section1 ol li{
-	margin: 1rem auto 0;
+	margin: 1rem auto 0 12rem;
 }
 
 .event3 .section1 ol li:first-child {
@@ -803,6 +803,39 @@ main section .title-sub {
 	height: 100%;
 	object-fit: cover;
 }
+
+.gallery-list-container .swiper-button-prev,
+.gallery-list-container .swiper-button-next{
+	top: initial;
+	bottom: 2rem;
+	width: 1.4rem;
+	height: 1.4rem;
+	background-size: 1.4rem 1.4rem;
+	margin-top: 0;
+}
+
+.gallery-list-container .swiper-button-prev{
+	background-image: url(../img/gallery-prev.svg#enable);
+	left: 15rem;
+}
+
+.gallery-list-container .swiper-button-next{
+	background-image: url(../img/gallery-next.svg#enable);
+	right: 15rem;
+}
+
+/* .gallery-list-container .swiper-button-prev.swiper-button-disabled,
+.gallery-list-container .swiper-button-next.swiper-button-disabled{
+	opacity: 1;
+}
+
+.gallery-list-container .swiper-button-prev.swiper-button-disabled{
+	background-image: url(../img/gallery-prev.svg);
+}
+
+.gallery-list-container .swiper-button-next.swiper-button-disabled{
+	background-image: url(../img/gallery-next.svg);
+} */
 
 .event3 .button-event3-2 {
 	margin: 0 auto;
