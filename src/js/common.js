@@ -1,3 +1,47 @@
+var galleryList = new Swiper('.gallery-list-container', {
+	init: false,
+	loop: false,
+	preloadImages: false,
+	lazy: true,
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+galleryList.on('init', function() {
+	if (this.slides.length > 5) {
+		$('.swiper-pagination').hide();
+		$('.swiper-pagination2').show();
+	}
+});
+
+galleryList.init();
+
+galleryList.on('slideChange', function() {
+	if (this.slides.length > 5) {
+		$('.swiper-pagination2 .swiper-pagination-bullet').removeClass('swiper-pagination-bullet-active');
+		if (this.activeIndex === 0) {
+			$('.swiper-pagination2 .swiper-pagination-bullet:nth-child(1)').addClass('swiper-pagination-bullet-active');
+		}
+		if (this.activeIndex === 1) {
+			$('.swiper-pagination2 .swiper-pagination-bullet:nth-child(2)').addClass('swiper-pagination-bullet-active');
+		}
+		if (this.activeIndex > 1 && this.activeIndex < this.slides.length - 2) {
+			$('.swiper-pagination2 .swiper-pagination-bullet:nth-child(3)').addClass('swiper-pagination-bullet-active');
+		}
+		if (this.activeIndex === this.slides.length - 2) {
+			$('.swiper-pagination2 .swiper-pagination-bullet:nth-child(4)').addClass('swiper-pagination-bullet-active');
+		}
+		if (this.activeIndex === this.slides.length - 1) {
+			$('.swiper-pagination2 .swiper-pagination-bullet:nth-child(5)').addClass('swiper-pagination-bullet-active');
+		}
+	}
+});
+
 // youtube API 불러옴
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
@@ -249,18 +293,6 @@ var mySwiper = new Swiper('.winner-list', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
-});
-
-var mySwiper = new Swiper('.gallery-list-container', {
-	loop: false,
-	autoHeight: true,
-  pagination: {
-    el: '.swiper-pagination',
-	},
-	navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 });
 
 $('.button-result1').click(function() {
