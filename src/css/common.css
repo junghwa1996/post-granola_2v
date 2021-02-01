@@ -377,8 +377,8 @@ main section .title-sub {
 }
 
 .event1{
-	height: 219.0rem;
-	background: url(../img/event1-background.png) no-repeat no-repeat center 10.0rem/66.6rem 209.0rem;;
+	height: 228rem;
+	background: url(../img/event1-background.png) no-repeat no-repeat center 10.0rem/66.6rem 218rem;;
 }
 
 .event1:after{
@@ -392,7 +392,7 @@ main section .title-sub {
 	width: 37.6rem;
 	height: 34.1rem;
 	background: url(../img/event1-decoration2.png) no-repeat center center/contain;
-	bottom: -18rem;
+	bottom: -12rem;
 	left: -15.7rem;
 	z-index: 1;
 }
@@ -463,26 +463,27 @@ main section .title-sub {
 }
 
 .event1 .section-prize .prize1{
-	width: 33.6rem;
-	height: 20.5rem;
+	width: 28.1rem;
+	height: 29.6rem;
 	background: url(../img/event1-prize1.png) no-repeat center center/contain;
 }
 
 .event1 .section-prize .prize2{
-	width: 34.0rem;
-	height: 26.1rem;
+	width: 27.7rem;
+	height: 25.7rem;
 	background: url(../img/event1-prize2.png) no-repeat center center/contain;
 }
 
 .event1 .section-prize .prize3{
-	width: 24.7rem;
-	height: 26.0rem;
+	width: 37.2rem;
+	height: 27.6rem;
 	background: url(../img/event1-prize3.png) no-repeat center center/contain;
+	margin: 5rem auto 7rem 20rem;
 }
 
 .event2{
-	height: 190.5rem;
-	background: url(../img/event2-background.png) no-repeat no-repeat center 10.0rem/66.6rem 180.5rem;;
+	height: 184.1rem;
+	background: url(../img/event2-background.png) no-repeat no-repeat center 10.0rem/66.6rem 173.1rem;;
 }
 
 .event2:after {
@@ -539,27 +540,9 @@ main section .title-sub {
 }
 
 .event2 .section-prize .prize-wrap .prize1{
-	width: 21.0rem;
-	height: 17.4rem;
+	width: 46.1rem;
+	height: 42.3rem;
 	background: url(../img/event2-prize1.png) no-repeat center center/contain;
-}
-
-.event2 .section-prize .prize-wrap .prize2{
-	width: 21.0rem;
-	height: 17.4rem;
-	background: url(../img/event2-prize2.png) no-repeat center center/contain;
-}
-
-.event2 .section-prize .prize-wrap .prize3{
-	width: 21.0rem;
-	height: 17.4rem;
-	background: url(../img/event2-prize3.png) no-repeat center center/contain;
-}
-
-.event2 .section-prize .prize-wrap .prize4{
-	width: 21.0rem;
-	height: 17.4rem;
-	background: url(../img/event2-prize4.png) no-repeat center center/contain;
 }
 
 .playhouse .title-main {
@@ -626,15 +609,15 @@ main section .title-sub {
 }
 
 .event3{
-	height: 337.7rem;
-	background: url(../img/event3-background.png) no-repeat no-repeat center 10.0rem/66.6rem 281.2rem;;
+	height: 375.3rem;
+	background: url(../img/event3-background.png) no-repeat no-repeat center 10.0rem/66.6rem 304.3rem;;
 }
 
 .event3:after {
 	width: 35.9rem;
 	height: 40.9rem;
 	background: url(../img/event3-decoration.png) no-repeat center center/contain;
-	top: -17rem;
+	top: -18rem;
 	right: -18rem;
 	z-index: 1;
 }
@@ -643,7 +626,7 @@ main section .title-sub {
 	width: 12.6rem;
 	height: 9rem;
 	background: url(../img/event3-decoration2.png) no-repeat center center/contain;
-	bottom: 43rem;
+	bottom: 58rem;
 }
 
 .event3 .title-main {
@@ -875,19 +858,25 @@ main section .title-sub {
 }
 
 .event3 .section-prize .prize1{
-	width: 33.6rem;
-	height: 20.5rem;
-	background: url(../img/event1-prize1.png) no-repeat center center/contain;
+	width: 29.9rem;
+	height: 23.4rem;
+	background: url(../img/event3-prize1.png) no-repeat center center/contain;
 }
 
 .event3 .section-prize .prize2{
-	width: 34.0rem;
-	height: 26.1rem;
-	background: url(../img/event1-prize2.png) no-repeat center center/contain;
+	width: 31.2em;
+	height: 18.2rem;
+	background: url(../img/event3-prize2.png) no-repeat center center/contain;
+}
+
+.event3 .section-prize .prize3{
+	width: 24.7rem;
+	height: 22.4rem;
+	background: url(../img/event3-prize3.png) no-repeat center center/contain;
 }
 
 .event3 .section3 {
-	margin: 20rem auto 6rem;
+	margin: 15rem auto 6rem;
 	width: 100%;
 	position: relative;
 	padding-top: 7.0rem;
@@ -907,11 +896,11 @@ main section .title-sub {
 .event3 .section3::before{
 	content: '';
 	position: absolute;
-	width: 40.4rem;
-	height: 35.5rem;
+	width: 34.7rem;
+	height: 26.2rem;
 	background: url(../img/event3-decoration3.png) no-repeat center center/contain;
-	right: -19rem;
-	bottom: -28rem;
+	right: -9rem;
+	bottom: -15rem;
 }
 
 .event3 .section3 h4 {
@@ -922,20 +911,29 @@ main section .title-sub {
 }
 
 .event3 .section3 ul {
-	margin-left: 11.7rem;
+	margin-left: 34%;
 }
 
-.event3 .section3 ul li:first-child {
-	width: 45.2rem;
-	height: 4.0rem;
-	background: url(../img/event3-text6.png) no-repeat left top/contain;
+.event3 .section3 ul li{
 	margin-bottom: 2.5rem;
 }
 
-.event3 .section3 ul li:last-child {
-	width: 45.2rem;
-	height: 4.0rem;
-	background: url(../img/event3-text7.png) no-repeat left top/contain;
+.event3 .section3 ul li:first-child {
+	width: 23.4rem;
+	height: 8.9rem;
+	background: url(../img/event3-text6.png) no-repeat center center/contain;
+}
+
+.event3 .section3 ul li:nth-child(2) {
+	width: 23.4rem;
+	height: 8.9rem;
+	background: url(../img/event3-text7.png) no-repeat center center/contain;
+}
+
+.event3 .section3 ul li:nth-child(3) {
+	width: 23.4rem;
+	height: 8.9rem;
+	background: url(../img/event3-text8.png) no-repeat center center/contain;
 }
 
 .event3 .button-result1 {
