@@ -1443,7 +1443,7 @@ footer p:last-child {
 	height: 29.6rem;
 	background: url(../img/event2-radio4-check.png) no-repeat center top/25.4rem 29.6rem;
 }
-
+/* 210204 */
 .modal-event2-page1 .event2-select ul li:not(:nth-child(1)) label {
 	position: absolute;
 	width: 100%;
