@@ -804,7 +804,7 @@ main section .title-sub {
 
 .gallery-list-container .swiper-button-prev,
 .gallery-list-container .swiper-button-next{
-	top: initial;
+	top: auto;
 	bottom: 2rem;
 	width: 1.4rem;
 	height: 1.4rem;
