@@ -172,7 +172,7 @@ function modalClose() {
 function hashtagCopy() {
     var dummy = document.createElement("textarea");
     document.querySelector('.hash-dummy').appendChild(dummy);
-    dummy.value = '#포스트그래놀라 #포스트현미그래놀라 #그래놀라홈브런치 #홈브런치맛집';
+    dummy.value = '#포스트그래놀라 #포스트현미그래놀라 #그래놀라홈브런치 #홈브런치맛집 #포스트그래놀라인증';
     dummy.select();
     document.execCommand("copy");
 	document.querySelector('.hash-dummy').removeChild(dummy);
