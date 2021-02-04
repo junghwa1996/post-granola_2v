@@ -220,7 +220,7 @@ $('.button-event2').click(function() {
 		modalOpen('.modal-event2');
 });
 
-$('.modal-event2-page1 .event2-select ul li').click(function() {
+$('.modal-event2-page1 .event2-select ul li:not(:nth-child(1))').click(function() {
 	modalNext('.modal-event2', 'page1', 'page2');
 });
 

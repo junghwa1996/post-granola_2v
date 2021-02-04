@@ -1425,13 +1425,6 @@ footer p:last-child {
 	cursor: pointer;
 }
 
-.modal-event2-page1 .event2-select ul li.event2-select1.active::after,
-.modal-event2-page1 .event2-select ul li.event2-select1:hover::after {
-	width: 26.3rem;
-	height: 29.7rem;
-	background: url(../img/event2-radio1-check.png) no-repeat center top/26.3rem 29.7rem;
-}
-
 .modal-event2-page1 .event2-select ul li.event2-select2.active::after,
 .modal-event2-page1 .event2-select ul li.event2-select2:hover::after {
 	width: 24.2rem;
@@ -1451,7 +1444,7 @@ footer p:last-child {
 	background: url(../img/event2-radio4-check.png) no-repeat center top/25.4rem 29.6rem;
 }
 
-.modal-event2-page1 .event2-select ul li label {
+.modal-event2-page1 .event2-select ul li:not(:nth-child(1)) label {
 	position: absolute;
 	width: 100%;
 	height: 100%;
