@@ -286,16 +286,16 @@ $('.form-read-button').click(function() {
 	}
 });
 
-var mySwiper = new Swiper('.winner-list', {
+var winnerList = new Swiper('.winner-list', {
 	loop: true,
 	autoHeight: true,
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
 	},
 });
 
 $('.button-result1').click(function() {
 	modalOpen('.modal-result1');
-	mySwiper.update();
+	winnerList.update();
 });
