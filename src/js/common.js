@@ -305,8 +305,8 @@ $('.button-result1').click(function() {
 // 210224 특정시간 팝업 노출
 
 function time(){
-	if (new Date() >= new Date('02/24/2021 14:44:00') 
-	&& new Date() < new Date('02/24/2021 14:45:00')) { 
+	if (new Date() >= new Date('02/24/2021 18:00:00') 
+	&& new Date() < new Date('02/25/2021 00:00:00')) { 
 		modalOpen('.modal-result1');
 		winnerList.update();
 	}	
