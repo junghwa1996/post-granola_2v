@@ -945,7 +945,7 @@ main section .title-sub {
 	display: inline-block;
 	width: 20.5rem;
 	height: 3.2rem;
-	background: url(../img/result-button1.png) no-repeat center center/contain;
+	background: url(../img/result-button2.png) no-repeat center center/contain;
 }
 
 .notice {
@@ -1947,37 +1947,46 @@ footer p:last-child {
 	justify-content: center;
 }
 
+.result-prize1 ul li:first-child,
+.result-prize4 ul li:first-child{
+	margin-right: 3rem;
+}
+
 .result-prize2{
 	margin-top: 30rem;
 }
 
 .result-prize3{
 	margin-top: 57rem;
+}
+
+.result-prize2,
+.result-prize3{
 	height: 33.5rem;
 	overflow-y: scroll;
 	border-bottom-left-radius: 1rem;
 }
 
-.result-prize3 ul,
-.result-prize5 ul{
+.result-prize2 ul,
+.result-prize3 ul{
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 0;
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 0;
 }
 
-.result-prize3::-webkit-scrollbar,
-.result-prize5::-webkit-scrollbar {
+.result-prize2::-webkit-scrollbar,
+.result-prize3::-webkit-scrollbar{
 	width: 2rem;
 }
 
-.result-prize3::-webkit-scrollbar-thumb ,
-.result-prize5::-webkit-scrollbar-thumb{
+.result-prize2::-webkit-scrollbar-thumb ,
+.result-prize3::-webkit-scrollbar-thumb {
 	background: #c39453;
 }
 
-.result-prize3::-webkit-scrollbar-track,
-.result-prize5::-webkit-scrollbar-track {
+.result-prize2::-webkit-scrollbar-track,
+.result-prize3::-webkit-scrollbar-track {
 	background: #ddd8d1;
 }
 
@@ -1988,7 +1997,7 @@ footer p:last-child {
 .result-prize5{
 	margin-top: 29rem;
 	height: 21.3rem;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	border-bottom-left-radius: 1rem;
 }
 
