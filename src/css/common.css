@@ -943,9 +943,9 @@ main section .title-sub {
 .event3 .button-result1::after {
 	content: "";
 	display: inline-block;
-	width: 20.5rem;
+	width: 21.1rem;
 	height: 3.2rem;
-	background: url(../img/result-button2.png) no-repeat center center/contain;
+	background: url(../img/result-button3.png) no-repeat center center/contain;
 }
 
 .notice {
@@ -1859,7 +1859,7 @@ footer p:last-child {
 }
 
 .modal-result .result-slide.page-3{
-	height: 126.5rem;
+	height: 172.4rem;
 	background: url(../img/modal-winner-bg3.png) no-repeat center center/contain;
 }
 
@@ -1943,14 +1943,15 @@ footer p:last-child {
 }
 
 .result-prize1 ul,
-.result-prize4 ul{
+.result-prize4 ul,
+.result-prize6 ul{
 	justify-content: center;
 }
 
-.result-prize1 ul li:first-child,
+/* .result-prize1 ul li:first-child,
 .result-prize4 ul li:first-child{
 	margin-right: 3rem;
-}
+} */
 
 .result-prize2{
 	margin-top: 30rem;
@@ -1961,14 +1962,14 @@ footer p:last-child {
 }
 
 .result-prize2,
-.result-prize3{
+.result-prize5{
 	height: 33.5rem;
 	overflow-y: scroll;
 	border-bottom-left-radius: 1rem;
 }
 
 .result-prize2 ul,
-.result-prize3 ul{
+.result-prize5 ul{
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 0;
 	border-bottom-left-radius: 1rem;
@@ -1976,29 +1977,33 @@ footer p:last-child {
 }
 
 .result-prize2::-webkit-scrollbar,
-.result-prize3::-webkit-scrollbar{
+.result-prize5::-webkit-scrollbar{
 	width: 2rem;
 }
 
 .result-prize2::-webkit-scrollbar-thumb ,
-.result-prize3::-webkit-scrollbar-thumb {
+.result-prize5::-webkit-scrollbar-thumb {
 	background: #c39453;
 }
 
 .result-prize2::-webkit-scrollbar-track,
-.result-prize3::-webkit-scrollbar-track {
+.result-prize5::-webkit-scrollbar-track {
 	background: #ddd8d1;
 }
 
 .result-prize4{
-	margin-top: 55rem;
+	margin-top: 56rem;
 }
 
 .result-prize5{
-	margin-top: 29rem;
-	height: 21.3rem;
+	margin-top: 31rem;
+	height: 29.5rem;
 	/* overflow-y: scroll; */
 	border-bottom-left-radius: 1rem;
+}
+
+.result-prize6{
+	margin-top: 25rem;
 }
 
 @media (max-width: 720px) {
